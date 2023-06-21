@@ -1,0 +1,207 @@
+/* Estilos para el encabezado */
+header {
+  background-color: rgb(58, 209, 194);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+nav {
+  order: 2;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo img {
+  height: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  background-color: rgb(58, 209, 194);
+  color: rgb(58, 209, 194);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #63b4ee;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo img {
+  height: 100px;
+}
+
+nav {
+  order: 2;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: rgb(66, 65, 70);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:rgb(58, 209, 194);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+form {
+  max-width: 500px; 
+  margin: 20px auto; 
+  padding: 40px; 
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  background-color: #910606;
+  box-shadow: 0px 0px 20px #ffffff;
+}
+h2 {
+  color: #f1f1f1;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form input[type="number"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box; 
+}
+
+form input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #fffdfd;
+  font-weight: bold;  
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+.feedback{
+  max-width:100%;
+  width: 92%;
+  background-color:  rgb(72, 62, 62);
+  padding: 5%;
+  color: #000000;
+  font-size: 90%;
+  visibility: hidden;
+  opacity: 0;
+}
+.succes{
+  border:  2px solid lime;
+}
+.error{
+border:  2px solid red;
+}
+

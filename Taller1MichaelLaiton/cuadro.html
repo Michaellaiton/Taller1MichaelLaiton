@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retos de Javascript</title>
+    <link rel="shortcut icon"href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4t1ABHdQ2BEwVFRJeVzmqp4IuEWaiJnOZ2w&usqp=CAU" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/sytle.css" />
+    <script src="Javascript/demo.js"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="logo-menu">
+        <div class="logo">
+          <img src="imagenes/logo.png" alt="Logo de Ford" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Retos</a></li>
+            <li><a href="cuadro.html">Ejemplos</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Eventos JavaScript</h1>
+      <table>
+        <tr>
+          <th>Evento</th>
+          <th>Ejemplo de aplicación</th>
+          <th>Demostración</th>
+        </tr>
+        <tr>
+          <td>mouseenter</td>
+          <td>Mostrar una imagen ampliada cuando el usuario coloca el cursor sobre ella.
+          </td>
+          <td id="demo-mouseenter"><img id="imagen"src="imagenes/javascript.png"width="100"alt="Imagen ampliada"/>
+            <div id="imagen-ampliada" style="display: none"><img src="" alt="Imagen ampliada" /></div>
+          </td>
+        </tr>
+        <tr>
+          <td>mouseleave</td>
+          <td>Ocultar un elemento cuando el cursor sale de su área.</td>
+          <td id="demo-mouseleave">
+            <img id="mi-elemento"src="imagenes/javascript.png"width="100"alt="Imagen"/></td>
+        </tr>
+        <tr>
+          <td>keyup</td>
+          <td>Validar el formato de un campo de entrada mientras el usuarioescribe.</td>
+          <td id="demo-keyup">
+            <input type="text" id="campo-entrada" />
+          </td>
+        </tr>
+        <tr>
+          <td>focus</td>
+          <td>Cambiar el estilo de un campo de texto cuando recibe el enfoque.</td>
+          <td id="demo-focus"><input type="text" id="campo-texto" />
+          </td>
+        </tr>
+        <tr>
+          <td>blur</td>
+          <td>Validar un campo de entrada cuando pierde el enfoque.</td>
+          <td id="demo-blur"></td>
+        </tr>
+        <tr>
+          <td>load</td>
+          <td>Cargar contenido dinámico en una página web después de que se haya cargado inicialmente.
+          </td><td id="demo-load"></td>
+        </tr>
+        <tr>
+          <td>resize</td>
+          <td>Ajustar el diseño de una página en respuesta al cambio de tamaño dela ventana del navegador.</td>
+          <td id="demo-resize"></td>
+        </tr>
+        <tr>
+          <td>contextmenu</td>
+          <td>Personalizar el menú contextual que aparece al hacer clic derecho enun elemento.</td><td id="demo-contextmenu">
+            <div id="elemento-personalizado">
+              Haz clic derecho aquí para mostrar el menú contextual personalizado.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>touchstart</td>
+          <td>Responder al inicio de un toque en una pantalla táctil.</td>
+          <td id="demo-touchstart">
+            <div id="pantalla-tactil">
+              Toca aquí para iniciar el evento táctil.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>scroll</td>
+          <td>Realizar una acción cuando el usuario desplaza el contenido de una página.</td>
+          <td id="demo-scroll"></td>
+        </tr>
+      </table>
+    </main>
+    
+  </body>
+</html>

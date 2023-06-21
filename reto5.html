@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reto 5</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4t1ABHdQ2BEwVFRJeVzmqp4IuEWaiJnOZ2w&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/sytle.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Retos</a></li>
+            <li><a href="cuadro.html">Ejemplos</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="card">
+      <h3>Círculo</h3>
+      <button onclick="openModal('circle')">Perímetro</button>
+      <button onclick="openModal('circle')">Área</button>
+    </div>
+    <div class="card">
+      <h3>Triángulo</h3>
+      <button onclick="openModal('triangle')">Perímetro</button>
+      <button onclick="openModal('triangle')">Área</button>
+    </div>
+    <div class="card">
+      <h3>Rectángulo</h3>
+      <button onclick="openModal('rectangle')">Perímetro</button>
+      <button onclick="openModal('rectangle')">Área</button>
+    </div>
+    <div class="card">
+      <h3>Cuadrado</h3>
+      <button onclick="openModal('square')">Perímetro</button>
+      <button onclick="openModal('square')">Área</button>
+    </div>
+
+    <div id="ventanaModal">
+      <div class="modal-content">
+        <h2>Ingrese los datos</h2>
+        <input type="text" id="valor1" placeholder="Valor 1" />
+        <input type="text" id="valor2" placeholder="Valor 2" />
+        <button onclick="calculate()">Calcular</button>
+        <button onclick="closeModal()">Cerrar</button>
+        <div id="resultadoPerimetro" style="display: none">
+          <h3>Resultado del Perímetro</h3>
+          <p id="perimetroResult"></p>
+        </div>
+        <div id="resultadoArea" style="display: none">
+          <h3>Resultado del Área</h3>
+          <p id="areaResult"></p>
+        </div>
+      </div>
+    </div>
+    <script src="Javascript/figurasGeometricas.js"></script>
+  </body>
+</html>
